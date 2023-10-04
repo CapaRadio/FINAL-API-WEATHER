@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>APIWeather</title>
+</head>
+<body>
+    
+    <script>
+        window.fetch('https://api.openweathermap.org/data/2.5/weather?q=Paris&appid=8bd6a74ebc83731a9ff599b8bbc4e397')
+        .then(res => res.json())
+        .then(resJson => console.log(resJson))
+    </script>
+
+
+
+</body>
+</html>
